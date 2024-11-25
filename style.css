@@ -6,6 +6,11 @@ h1{
     text-align: center;
     font-family: 'Montserrat';
 }
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
 .chickenrecipe{
     border: 2px solid hsl(0, 0%, 100%)ff; 
     box-shadow: -2px 0 5px 5px rgba(114, 112, 112, 0.5);
@@ -13,9 +18,8 @@ h1{
     padding-top: -40px;
     border-radius: 15px;
     padding-right: 20px;
-
+    
 }
-
 img{
     height: 170px;
     width: 160px;
@@ -34,5 +38,55 @@ h3{
     line-height: 30px;
     color: #262729;
     padding-bottom: 0px;
+}
+
+p{
+    color:rgb(68, 66, 66);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+li{
+    font-size: 18px;
+    color: #262729;
+    list-style: none;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Montserrat';
+
+}
+.youtubelink{
+    background-color: #ff4757;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 170px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #ff4757;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (min-width:1024px){
+    .list{
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    img{
+        margin-left: 95px;
+    }
+    .youtubelink{
+        margin-left: 140px;
+    }
+    
 }
 
