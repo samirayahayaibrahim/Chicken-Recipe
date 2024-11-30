@@ -10,9 +10,7 @@
                 chickenElement.classList.add('chicken');
                 chickenElement.innerHTML = `
                     <img src="${chicken.strMealThumb}" alt="${chicken.strMeal}">
-
                     <h3>${chicken.strMeal}</h3>
-
                     <p>${chicken.strInstructions.slice(0, 150)}...</p>
                     <ul>${getIngredients(chicken).map(ingredient => `<li>${ingredient}</li>`).join('')}</ul>
                     <button id="youtubelink"><a href="${chicken.strYoutube}">Watch Video</a></button>
